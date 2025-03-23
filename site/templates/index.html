@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %} Аналитика по ключевым словам для каждого сообщества {% endblock %}
+
+{% block content %}
+    <h1>"Кто бежит?" Вконтакте</h1>
+    <p>Здесь можно посмотреть наиболее частотные ключевые слова из записей, опубликованных в последнее время в 10 пабликах Вконтакте: </p>
+
+        <li><a href="student_tf" class="button">Беговой Университет</a></li>
+        <li><a href="sechenovrunnersclub" class="button">Sechenov Runners Club</a></li>
+        <li><a href="studathletics" class="button">Студенческая лига легкой атлетики</a></li>
+        <li><a href="ranepa_run" class="button">Академия Бега</a></li>
+        <li><a href="runlab" class="button">Лаборатория бега Runlab</a></li>
+        <li><a href="begvpitere" class="button">Бег в Питере</a></li>
+        <li><a href="enjoytherunspb"class="button">Бег с удовольствием/Спб</a></li>
+        <li><a href="goldenringrun"class="button">Бегом по Золотому кольцу</a></li>
+        <li><a href="runcomrun"class="button">Беговое сообщество</a></li>
+        <li><a href="moscowmarathon"class="button">Московский марафон</a></li>
+
+        <p>Чтобы посмотреть графики частотности ключевых слов сообщества, нажмите на его название.</p>
+        <p>Данный набор сообществ достаточно полно отражает характер постов, публикуемых в сообществах, посвященных бегу. 
+            С помощью алгоритма KMeans по трем признакам -- пол, возраст и город подписчиков -- удалось выделить 3 кластера сообществ:
+            студенческие, популярные среди миллениалов в Москве и среди миллениалов в Спб.</p>
+
+        <p>А также есть сводный график ключевых слов по всем 10 сообществам:</p>
+
+        <li><a href="general_hist" class="button">Ключевые слова по всем сообществам</a></li>
+{% endblock %}
